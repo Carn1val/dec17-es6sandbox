@@ -1,4 +1,5 @@
-class User {
+(function(){
+  class User {
   constructor (username, password, email){
     this.username = username;
     this.password = password;
@@ -31,4 +32,4 @@ class Member extends User {
 
 let eric = new Member('Eric', 'Password3', 'eric@email.com', 'epic channels');
 eric.getMemberPackage();
-
+})();
